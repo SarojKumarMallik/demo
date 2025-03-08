@@ -12,7 +12,7 @@ if (isset($_GET['Tag'])) {
 
 		<div class="sub-banner">
 
-<img class="banner-img" src="images/Banner/gallery.jpg" alt="">
+<img class="banner-img" src="images/Banner/gallery.webp" alt="">
 <div class="detail">
     <div class="container">
         <div class="row">

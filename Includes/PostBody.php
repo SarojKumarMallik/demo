@@ -29,19 +29,19 @@ if (isset($_GET['slug'])) {
 $Query = "SELECT * FROM post_visits WHERE Post_ID = '$PostID'";
 $Result = $Connection->query($Query);
 
-$Query = "SELECT * FROM blog_post WHERE Post_ID = '$PostID'";
-$Result = $Connection->query($Query);
+// $Query1 = "SELECT * FROM blog_post WHERE Post_ID = '$PostID'";
+// $Result1 = $Connection->query($Query1);
 
-if ($Result->num_rows > 0) {
-    while($row = $Result->fetch_assoc()) {
-      // Meta
-        $MetaTitle=$row['MetaTitle'];
+// if ($Result1->num_rows > 0) {
+//     while($row = $Result1->fetch_assoc()) {
+//       // Meta
+//         $MetaTitle=$row['MetaTitle'];
       
-        $MetaDesc = $row['MetaDesc'];
-        $MetaKey = $row['MetaKey'];
-      //   Meta
-    }
-} 
+//         $MetaDesc = $row['MetaDesc'];
+//         $MetaKey = $row['MetaKey'];
+//       //   Meta
+//     }
+// } 
 //meta Information
 // if ($Result && $Result->num_rows > 0) {
 //    $Row = $Result->fetch_assoc();
@@ -195,7 +195,7 @@ if ($Result && $Result->num_rows > 0) {
 		<div class="row">
 
 			<div class="col-md-3">
-				<a href="index.html" class="logo"><img style="width: 165px;" src="../images/sonu_logo.jpg" alt=""></a>
+				<a href="../index.html" class="logo"><img style="width: 165px;" src="../images/sonu_logo.jpg" alt=""></a>
 			</div>
 
 			<div class="col-md-9">
@@ -217,7 +217,8 @@ if ($Result && $Result->num_rows > 0) {
 
 						<li class="parent"><a href="../team.html">Doctors</a>
 						</li>
-
+                        <li class="item-select parent"><a href="../blog.php">Blog</a>
+						</li>
 						<li class="parent"><a href="../contact-us2.html">Contact Us</a>
 						</li>
 
@@ -240,7 +241,7 @@ if ($Result && $Result->num_rows > 0) {
 
 		<div class="sub-banner">
 
-			<img class="banner-img" src="../images/Banner/gallery.jpg" alt="">
+			<img class="banner-img" src="../images/Banner/gallery.webp" alt="">
 			<div class="detail">
 				<div class="container">
 					<div class="row">

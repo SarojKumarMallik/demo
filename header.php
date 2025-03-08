@@ -69,6 +69,8 @@
 
 						<li class="parent"><a href="team.html">Doctors</a>
 						</li>
+						<li class="item-select parent"><a href="blog.php">Blog</a>
+						</li>
 
 						<li class="parent"><a href="contact-us2.html">Contact Us</a>
 						</li>
